@@ -125,3 +125,14 @@ body{
     cursor: pointer;
     background-color: #F4D4B7;
 }
+#forget-password{
+    border: none;
+    font-size: small;
+    font-weight: bolder;
+    color: #4D331F;
+    text-align: end;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #F4D4B7;
+
+}
