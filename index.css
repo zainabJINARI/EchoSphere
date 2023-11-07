@@ -62,7 +62,7 @@ body{
 }
 
 .logo_home,.body_home{
-    padding: 4rem 3rem 8rem;
+    padding: 2rem 3rem 8rem;
 }
 .logo_home{ 
     /*width: 30.375rem;*/
@@ -73,7 +73,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 4em;
     justify-content: space-between;
 }
 
