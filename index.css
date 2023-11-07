@@ -110,6 +110,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 8em auto ;
+    max-width: 450px;
+    width: 100%;
 }
 .start_echoing_screen_login h1,.start_echoing_screen_signup h1{
     color: #4D331F;
@@ -117,15 +120,17 @@ body{
 
 }
 #login_form,#signup_form{
-    min-width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
 }
 #login-btn,#signup-btn,#login_form input,#signup_form input{
+    flex: 1;
     padding: 10px 20px ;
     border-radius: 20px;
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 100%;
 
 }
 #login_form input,#signup_form input{
@@ -262,5 +267,10 @@ footer .copy-right{
 @media (min-width:850px){
     .body_home #start-echoing{
         font-size: 1.1rem;
+    }
+    .body_home #start-echoing{
+        flex-grow: 1;
+        max-width: 400px;
+        align-self: center;
     }
 }
