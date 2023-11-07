@@ -47,8 +47,8 @@ body{
 }
 
 .nav_bar > div{
-    padding: 10px 10px;
-    font-size: 1.2em;
+    padding: 1em;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 .visible{
@@ -62,7 +62,7 @@ body{
 }
 
 .logo_home,.body_home{
-    padding: 4rem 3rem;
+    padding: 4rem 3rem 8rem;
 }
 .logo_home{ 
     /*width: 30.375rem;*/
