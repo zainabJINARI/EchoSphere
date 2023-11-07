@@ -13,7 +13,7 @@ body{
     background-color: #99592A;
     flex-direction: row;
     color: #4D331F;
-    padding: 1em 2em;
+    padding: 1em 2em 1em 0.5em;
    
     position: fixed;
     top: 0;
