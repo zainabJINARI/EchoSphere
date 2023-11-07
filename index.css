@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     background-color: #F4D4B7;
@@ -25,54 +29,77 @@ body{
     justify-content: end ;
     list-style: none;
 }
-.start{
+.element:hover{
     color: white;
+}
+.explore{
+    display: flex;
+    flex-direction: row;
+    
+}
+.explore-icon {
+   margin-top: 2px;
+   align-self: baseline; 
 }
 
 .nav_bar > div{
     padding: 10px 10px;
-    text-decoration: underline;
     font-size: 1.2em;
+    cursor: pointer;
 }
+.visible{
+    display: none;
+}
+/*Home screen Style*/
 .home_screen{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 .logo_home,.body_home{
-    margin: 5rem 3rem;
+    padding: 4rem 3rem;
 }
 .logo_home{ 
-    width: 30.375rem;
+    /*width: 30.375rem;*/
+    width: 25.375rem;
+    align-self: self-start;
 }
 .body_home{
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 5em;
     justify-content: space-between;
 }
 
 #start-echoing{
     border-radius: 30px;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     box-shadow: 0px 4px 4px 0px #99592A;
-    padding: 0.5rem  5rem ;
+    padding: 0.5rem  4rem ;
     cursor: pointer;
-    height: 4rem;
     border: 2px solid #4D331F  ;
 }
+
+ 
 .body_home #paragraph-home{
     margin: 0;
     color: #4D331F;
     text-shadow: 0px 3px 4px #99592A;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     max-width: 600px;
     min-width: 300px;
 }
+
+/*Login style */
 .start_echoing_screen_login,.start_echoing_screen_signup{
     margin-top: 70px;
     display: none;
@@ -135,4 +162,98 @@ body{
     cursor: pointer;
     background-color: #F4D4B7;
 
+}
+
+/* explore echos part*/
+.explore_echoes{
+    padding: 2em 1em 7em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    color: #4D331F;
+
+
+}
+.explore_echoes  .echo {
+    padding: 1em 1.5em;
+    border: #4D331F 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 300px;
+    text-align: center;
+    background-color: white;
+
+}
+.explore_echoes .echo .content{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+}
+.explore_echoes .echo button{
+    background-color: transparent;
+    border: none;
+    width: 0px;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+
+.explore_echoes {
+    display: none;
+}
+
+
+/*footer*/
+
+footer{
+    padding: 0.5em 0;
+    text-align: center;
+    background-color: #99592A;
+    font-size:0.75rem ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-weight: 600;
+    height:auto; 
+}
+footer .title{
+    font-weight: 900;
+    margin-bottom: 2px;
+    font-size: 1rem;
+    color: #4D331F;
+}
+footer .copy-right{
+    color: #D7D7D7 ;
+
+}
+@media (min-width:750px) {
+    .logo_home{ 
+        width: 30.375rem;
+    }
+    .body_home{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+    .body_home #start-echoing{
+        white-space: nowrap;
+        text-align: center;
+        padding: 1rem  4rem ;
+        height: 4rem;
+    }
+    .body_home #paragraph-home{
+        font-size: 1.1rem;
+    }
+    .visible{
+        display: inline;
+    }
+}
+
+@media (min-width:850px){
+    .body_home #start-echoing{
+        font-size: 1.1rem;
+    }
 }
