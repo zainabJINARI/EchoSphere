@@ -9,6 +9,7 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 .header-element{
+    width: 100%;
     background-color: #99592A;
     flex-direction: row;
     color: #4D331F;
