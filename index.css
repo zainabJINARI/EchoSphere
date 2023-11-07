@@ -21,16 +21,16 @@ body{
     display: none;
 }
 .logo_header{
-    width: 237px;
+    width: 150px;
 }
 .nav_bar{
     font-size: small;
     display: flex;
     flex:1;
-    padding: 0.5em 1.2em;
+    padding: 0.5em 0 0.5em 1.5em ;
     margin-left: auto;
     font-weight: bold;
-    justify-content: end ;
+    justify-content:end;
     list-style: none;
 }
 .element:hover{
@@ -47,7 +47,7 @@ body{
 }
 
 .nav_bar > div{
-    padding: 10px 10px;
+    padding: 1em;
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -233,6 +233,9 @@ footer .copy-right{
 
 }
 @media (min-width:750px) {
+    .logo_header{
+        width: 237px;
+    }
     .logo_home{ 
         width: 30.375rem;
     }
