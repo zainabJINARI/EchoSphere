@@ -196,10 +196,18 @@ body{
     background-color: white;
 
 }
-.explore_echoes .echo .content{
+.explore_echoes .echo h4{
+    margin-top: 0 ;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+.explore_echoes .echo h4,.explore_echoes .echo .content{
     font-family: 'Caveat', cursive;
     font-weight: bold;
+
 }
+
 .explore_echoes .echo button{
     background-color: transparent;
     border: none;
